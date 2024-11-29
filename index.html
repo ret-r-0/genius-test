@@ -4,33 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img src="./images/logo.svg" alt="логтип сучасної пекарні" />
-        <!-- logo and menu (ctrl+/) -->
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="логтип сучасної пекарні" />
+          <!-- logo and menu (ctrl+/) -->
+        </a>
         <ul>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#cookers-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#format-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <!-- order a call -->
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
+    <!-- test table -->
+    <!-- <table>
+      <thead>
+        <caption>
+          чєпушили
+        </caption>
+        <tr>
+          <th>№</th>
+          <th>Full Name</th>
+          <th>Position</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Steve Jobs</td>
+          <td>Apple Founder</td>
+          <td>1.5 bil$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mark Zukerberg</td>
+          <td>Meta Founder</td>
+          <td>1.3 bil$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Jack Wilson</td>
+          <td>Homeless</td>
+          <td>0 bil$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Laura Lee</td>
+          <td>Actress</td>
+          <td>1 bil$</td>
+        </tr>
+      </tbody>
+    </table> -->
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -45,8 +88,8 @@
           alt="чоловік-пекар, посміхається, дивиться на зпечені батони"
         />
       </section>
-      <section>
-        <h2>Наші найкращі шеф-Кухарі</h2>
+      <section id="cookers-section">
+        <h2 class="section-title">Наші найкращі шеф-Кухарі</h2>
         <ul>
           <li>
             <article>
@@ -69,8 +112,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="format-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -89,8 +132,16 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Приєднуйтесь до мережі пекарень</h2>
+      <section id="contacts-section">
+        <h2 class="section-title">Приєднуйтесь до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036113!2d30.488698376098355!3d50.45668098691576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1732556392533!5m2!1sru!2sua"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>

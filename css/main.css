@@ -442,11 +442,12 @@ footer::after {
   font-weight: 1.17;
   top: 14.5px;
   transition: transform 0.3s;
+  pointer-events: none;
 }
 
-.form-input:focus + .form-label {
+/* .form-input:focus + .form-label {
   transform: translate(-36px, -40px);
-}
+} */
 
 .form-field:focus-within .form-label {
   transform: translate(-36px, -40px);
@@ -493,4 +494,42 @@ footer::after {
   display: inline-block;
   width: 50%;
   margin-left: 30px;
+}
+
+.button[disabled] {
+  background-color: lightcoral;
+}
+
+.form-input-p {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-label-p {
+  display: block;
+  position: absolute;
+  left: 42px;
+  font-size: 16px;
+  font-weight: 1.17;
+  top: 14.5px;
+  transition: transform 0.3s;
+  pointer-events: none;
+}
+
+.form-field-p:focus-within .form-label-p {
+  transform: translate(-36px, -40px);
+}
+
+.form-field-p {
+  margin-bottom: 32px;
+  position: relative;
+  margin-top: 6%;
+}
+
+.form-input-p:focus {
+  border-color: var(--color-brand);
+  outline: none;
 }

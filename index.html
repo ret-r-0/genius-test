@@ -234,35 +234,38 @@
             autocomplete="off"
             novalidate
           >
-            <div class="form-field">
+            <div class="form-field-p">
+              <label class="form-label-p" for="user-name">Ім'я</label>
               <input
-                class="form-input"
+                class="form-input-p"
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
               />
-              <label class="form-label" for="user-name">Ім'я</label>
             </div>
 
-            <div class="form-field">
-              <label class="form-label" for="user-phonenumber">Телефон</label>
+            <div class="form-field-p">
+              <label class="form-label-p" for="user-phonenumber">Телефон</label>
               <input
-                class="form-input"
+                class="form-input-p"
                 type="tel"
                 name="user-phonenumber"
                 id="user-phonenumber"
+                required
               />
             </div>
 
-            <div class="form-field">
-              <label class="form-label" for="user-email"
+            <div class="form-field-p">
+              <label class="form-label-p" for="user-email"
                 >Адреса Електронної Пошти</label
               >
               <input
-                class="form-input"
+                class="form-input-p"
                 type="email"
                 name="user-email"
                 id="user-email"
+                required
               />
             </div>
 
@@ -354,17 +357,18 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
-        <form name="contact-form" autocomplete="on" novalidate>
+        <form name="contact-form" autocomplete="off">
           <h2>Замовити дзвінок</h2>
           <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
           <div class="form-field">
+            <label class="form-label" for="user-name">Ім'я</label>
             <input
               class="form-input"
               type="text"
               name="user-name"
               id="user-name"
+              required
             />
-            <label class="form-label" for="user-name">Ім'я</label>
           </div>
 
           <div class="form-field">
@@ -374,6 +378,7 @@
               type="tel"
               name="user-phonenumber"
               id="user-phonenumber"
+              required
             />
           </div>
 
@@ -386,6 +391,7 @@
               type="email"
               name="user-email"
               id="user-email"
+              required
             />
           </div>
 
